@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import Image from "next/image";
-import menu from "./menu.jpg";
+import menu1 from "./menu1.jpg";
+import menu2 from "./menu2.jpg";
 
 export default function MenuImage() {
   return (
@@ -12,16 +13,31 @@ export default function MenuImage() {
         </h2>
 
         <div className="max-w-3xl mx-auto">
-          {/* Image container that allows full size but constrains width */}
-          <div className="w-full rounded-lg shadow-md mb-8 overflow-hidden">
-            <Image
-              src={menu}
-              alt="Burgers By Lalo Menu"
-              width={800} // Set to your image's natural width
-              height={1200} // Set to your image's natural height
-              className="w-full h-auto" // This maintains aspect ratio
-              priority
-            />
+          {/* Vertical stack of menu images */}
+          <div className="space-y-6 mb-8">
+            {/* First menu image */}
+            <div className="rounded-lg shadow-md overflow-hidden">
+              <Image
+                src={menu1}
+                alt="Burgers By Lalo Menu - Page 1"
+                width={800}
+                height={1200}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+
+            {/* Second menu image */}
+            <div className="rounded-lg shadow-md overflow-hidden">
+              <Image
+                src={menu2}
+                alt="Burgers By Lalo Menu - Page 2"
+                width={800}
+                height={1200}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
           </div>
 
           <div className="text-center mt-8">

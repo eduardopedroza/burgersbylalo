@@ -33,10 +33,7 @@ export default function Contacto() {
                   <h3 className="font-bold text-xl mb-1 text-[#ff5757]">
                     Horario
                   </h3>
-                  <p className="text-gray-700">
-                    Martes - Viernes: 10:30AM - 3PM
-                  </p>
-                  <p className="text-gray-700">Sábado: 12PM - 8PM</p>
+                  <p className="text-gray-700">Martes - Sabado: 12PM - 8PM</p>
                 </div>
               </div>
             </div>
